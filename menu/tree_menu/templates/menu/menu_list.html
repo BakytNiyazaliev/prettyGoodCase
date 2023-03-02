@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load menu_tags %}
+{% block title %} List of menu {% endblock %}
+{% block content %}
+    {% for node in nodes %}
+        {% draw_menu name=node.name %}
+    {% endfor %}
+{% endblock %}

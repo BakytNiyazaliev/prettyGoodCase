@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% load menu_tags %}
+{% block title %} node.name {% endblock %}
+{% block content %}
+    {% draw_menu name=node.name %}
+{% endblock %}
